@@ -1189,9 +1189,11 @@ ul {
 
 .submit-request .container > svg {
   position: absolute;
-  top: 163px;
+  bottom: 0;
   left: 0;
   z-index: 3;
+  width: 100%;
+  opacity: 0.08;
 }
 
 .submit-request .container > svg path {
