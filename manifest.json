@@ -1,7 +1,7 @@
 {
   "name": "Soto 128",
   "author": "128zen",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "api_version": 3,
   "default_locale": "en-us",
   "settings": [
@@ -880,258 +880,143 @@
       "label": "Footer",
       "variables": [
         {
-          "identifier": "show_request_section",
-          "type": "checkbox",
-          "description": "Show submit a request section",
-          "label": "Toggle Section",
-          "value": true
-        },
-        {
-          "identifier": "request_img_left",
-          "type": "file",
-          "description": "Insert image",
-          "label": "Image on the left"
-        },
-        {
-          "identifier": "request_img_center",
-          "type": "file",
-          "description": "Insert image",
-          "label": "Image in the center"
-        },
-        {
-          "identifier": "request_img_right",
-          "type": "file",
-          "description": "Insert image",
-          "label": "Image on the right"
-        },
-        {
-          "identifier": "request_heading",
+          "identifier": "footer_heading",
           "type": "text",
-          "description": "Enter section heading",
-          "label": "Request Section Heading",
-          "value": "Have a question or need support?"
+          "description": "Enter heading",
+          "label": "Footer Heading",
+          "value": "Can't find what you're looking for?"
         },
         {
-          "identifier": "request_subtitle",
+          "identifier": "footer_text",
           "type": "text",
-          "description": "Enter section subtitle",
-          "label": "Request Section Subtitle",
-          "value": "Our team is here to help! Reach out through any of the following options, and we’ll get back to you as soon as possible."
+          "description": "Enter subtitle",
+          "label": "Footer Subtitle",
+          "value": "Our customer care team is here for you!"
         },
         {
-          "identifier": "request_link_text",
+          "identifier": "footer_link_text",
           "type": "text",
           "description": "Enter text",
-          "label": "Submit a Request Link Text",
-          "value": "Submit a request"
+          "label": "Footer Link Text",
+          "value": "Submit A Request"
         },
         {
-          "identifier": "request_link",
+          "identifier": "footer_link",
           "type": "text",
           "description": "Insert link",
-          "label": "Submit a Request Link",
+          "label": "Footer Link",
           "value": "#"
-        },
-        {
-          "identifier": "footer_logo",
-          "type": "file",
-          "description": "Insert logo",
-          "label": "Footer Logo"
         },
         {
           "identifier": "footer_description",
           "type": "text",
           "description": "Enter description",
           "label": "Footer Description",
-          "value": "Design amazing digital experiences that create more happy in the world."
+          "value": "Forgot your password? Learn how to reset your password from the sign in page or your account settings."
         },
         {
-          "identifier": "footer_lists1_heading",
-          "type": "text",
-          "description": "Enter heading",
-          "label": "Footer List 1 Heading",
-          "value": "Use cases"
-        },
-        {
-          "identifier": "footer_lists1_item1",
+          "identifier": "footer_list_item1",
           "type": "text",
           "description": "Enter text",
-          "label": "Footer List 1 Item 1",
-          "value": "Prototyping"
+          "label": "Footer List Item 1",
+          "value": "Home"
         },
         {
-          "identifier": "footer_lists1_item1_url",
+          "identifier": "footer_list_item1_url",
           "type": "text",
           "description": "Insert link",
-          "label": "Footer List 1 Item 1 URL",
+          "label": "Footer List Item 1 URL",
           "value": "#"
         },
         {
-          "identifier": "footer_lists1_item2",
+          "identifier": "footer_list_item2",
           "type": "text",
           "description": "Enter text",
-          "label": "Footer List 1 Item 2",
-          "value": "Prototyping"
+          "label": "Footer List Item 2",
+          "value": "What's new"
         },
         {
-          "identifier": "footer_lists1_item2_url",
+          "identifier": "footer_list_item2_url",
           "type": "text",
           "description": "Insert link",
-          "label": "Footer List 1 Item 2 URL",
+          "label": "Footer List Item 2 URL",
           "value": "#"
         },
         {
-          "identifier": "footer_lists1_item3",
+          "identifier": "footer_list_item3",
           "type": "text",
           "description": "Enter text",
-          "label": "Footer List 1 Item 3",
-          "value": "Prototyping"
+          "label": "Footer List Item 3",
+          "value": "Documentation"
         },
         {
-          "identifier": "footer_lists1_item3_url",
+          "identifier": "footer_list_item3_url",
           "type": "text",
           "description": "Insert link",
-          "label": "Footer List 1 Item 3 URL",
+          "label": "Footer List Item 3 URL",
           "value": "#"
         },
         {
-          "identifier": "show_footer_lists1_item4",
+          "identifier": "show_footer_list_item4",
           "type": "checkbox",
-          "description": "Show footer lists 1 item 4",
-          "label": "Toggle Footer List 1 Item 4",
+          "description": "Show footer list item 4",
+          "label": "Toggle Footer List Item 4",
           "value": true
         },
         {
-          "identifier": "footer_lists1_item4",
+          "identifier": "footer_list_item4",
           "type": "text",
           "description": "Enter text",
-          "label": "Footer List 1 Item 4",
-          "value": "Prototyping"
+          "label": "Footer List Item 4",
+          "value": "Blog"
         },
         {
-          "identifier": "footer_lists1_item4_url",
+          "identifier": "footer_list_item4_url",
           "type": "text",
           "description": "Insert link",
-          "label": "Footer List 1 Item 4 URL",
+          "label": "Footer List Item 4 URL",
           "value": "#"
         },
         {
-          "identifier": "show_footer_lists1_item5",
+          "identifier": "show_footer_list_item5",
           "type": "checkbox",
-          "description": "Show footer lists 1 item 5",
-          "label": "Toggle Footer List 1 Item 5",
+          "description": "Show footer list item 5",
+          "label": "Toggle Footer List Item 5",
           "value": true
         },
         {
-          "identifier": "footer_lists1_item5",
+          "identifier": "footer_list_item5",
           "type": "text",
           "description": "Enter text",
-          "label": "Footer List 1 Item 5",
-          "value": "Prototyping"
+          "label": "Footer List Item 5",
+          "value": "Shop"
         },
         {
-          "identifier": "footer_lists1_item5_url",
+          "identifier": "footer_list_item5_url",
           "type": "text",
           "description": "Insert link",
-          "label": "Footer List 1 Item 5 URL",
+          "label": "Footer List Item 5 URL",
           "value": "#"
         },
         {
-          "identifier": "show_footer_lists2",
+          "identifier": "show_footer_list_item6",
           "type": "checkbox",
-          "description": "Show footer lists 2",
-          "label": "Toggle Footer List 2",
+          "description": "Show footer list item 6",
+          "label": "Toggle Footer List Item 6",
           "value": true
         },
         {
-          "identifier": "footer_lists2_heading",
-          "type": "text",
-          "description": "Enter heading",
-          "label": "Footer List 2 Heading",
-          "value": "Explore"
-        },
-        {
-          "identifier": "footer_lists2_item1",
+          "identifier": "footer_list_item6",
           "type": "text",
           "description": "Enter text",
-          "label": "Footer List 2 Item 1",
-          "value": "Prototyping"
+          "label": "Footer List Item 6",
+          "value": "Contact"
         },
         {
-          "identifier": "footer_lists2_item1_url",
+          "identifier": "footer_list_item6_url",
           "type": "text",
           "description": "Insert link",
-          "label": "Footer List 2 Item 1 URL",
-          "value": "#"
-        },
-        {
-          "identifier": "footer_lists2_item2",
-          "type": "text",
-          "description": "Enter text",
-          "label": "Footer List 2 Item 2",
-          "value": "Prototyping"
-        },
-        {
-          "identifier": "footer_lists2_item2_url",
-          "type": "text",
-          "description": "Insert link",
-          "label": "Footer List 2 Item 2 URL",
-          "value": "#"
-        },
-        {
-          "identifier": "footer_lists2_item3",
-          "type": "text",
-          "description": "Enter text",
-          "label": "Footer List 2 Item 3",
-          "value": "Prototyping"
-        },
-        {
-          "identifier": "footer_lists2_item3_url",
-          "type": "text",
-          "description": "Insert link",
-          "label": "Footer List 2 Item 3 URL",
-          "value": "#"
-        },
-        {
-          "identifier": "show_footer_lists2_item4",
-          "type": "checkbox",
-          "description": "Show footer lists 2 item 4",
-          "label": "Toggle Footer List 2 Item 4",
-          "value": true
-        },
-        {
-          "identifier": "footer_lists2_item4",
-          "type": "text",
-          "description": "Enter text",
-          "label": "Footer List 2 Item 4",
-          "value": "Prototyping"
-        },
-        {
-          "identifier": "footer_lists2_item4_url",
-          "type": "text",
-          "description": "Insert link",
-          "label": "Footer List 2 Item 4 URL",
-          "value": "#"
-        },
-        {
-          "identifier": "show_footer_lists2_item5",
-          "type": "checkbox",
-          "description": "Show footer lists 2 item 5",
-          "label": "Toggle Footer List 2 Item 5",
-          "value": true
-        },
-        {
-          "identifier": "footer_lists2_item5",
-          "type": "text",
-          "description": "Enter text",
-          "label": "Footer List 2 Item 5",
-          "value": "Prototyping"
-        },
-        {
-          "identifier": "footer_lists2_item5_url",
-          "type": "text",
-          "description": "Insert link",
-          "label": "Footer List 2 Item 5 URL",
+          "label": "Footer List Item 6 URL",
           "value": "#"
         },
         {

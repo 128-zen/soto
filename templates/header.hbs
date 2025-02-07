@@ -27,10 +27,10 @@
 
       <nav class="user-nav" id="user-nav">
         <ul class="user-nav-list">
-          <li>{{link 'new_request' class='submit-a-request button button-secondary'}}</li>
+          <li>{{link 'new_request' class='submit-a-request button button-primary'}}</li>
           {{#unless signed_in}}
           <li>
-            {{#link "sign_in" class="sign-in button button-primary"}}
+            {{#link "sign_in" class="sign-in button button-secondary"}}
             {{t 'sign_in'}}
             {{/link}}
           </li>
@@ -41,8 +41,8 @@
                 <div class="dropdown language-selector">
                   <button class="dropdown-toggle" aria-haspopup="true">
                     {{current_locale.name}}
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
-                      <path d="M7.99996 3.83334L7.99996 13.1667M7.99996 13.1667L12.6666 8.50001M7.99996 13.1667L3.33329 8.50001" stroke="#535862" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="6" viewBox="0 0 11 6" fill="none">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M6.04574 5.707C6.03869 5.71484 6.03141 5.72252 6.02392 5.73002C5.79292 5.96102 5.41819 5.96102 5.18719 5.73002L0.598646 1.13466C0.483174 1.01908 0.425293 0.866954 0.425293 0.71666C0.425293 0.567493 0.481898 0.414155 0.599805 0.297501C0.830899 0.0676067 1.2048 0.0679752 1.43543 0.298605L5.60578 4.47459L9.81531 0.270131C10.0463 0.0392166 10.4211 0.0391598 10.652 0.270131C10.883 0.501129 10.883 0.87586 10.652 1.10686L6.04574 5.707Z" fill="white"/>
                     </svg>
                   </button>
                   <span class="dropdown-menu" role="menu">
@@ -65,8 +65,8 @@
           {{user_avatar class="user-avatar"}}
           <span>
             {{user_name}}
-            <svg class="dropdown-chevron-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
-              <path d="M7.99996 3.83334L7.99996 13.1667M7.99996 13.1667L12.6666 8.50001M7.99996 13.1667L3.33329 8.50001" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="6" viewBox="0 0 11 6" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M6.04574 5.707C6.03869 5.71484 6.03141 5.72252 6.02392 5.73002C5.79292 5.96102 5.41819 5.96102 5.18719 5.73002L0.598646 1.13466C0.483174 1.01908 0.425293 0.866954 0.425293 0.71666C0.425293 0.567493 0.481898 0.414155 0.599805 0.297501C0.830899 0.0676067 1.2048 0.0679752 1.43543 0.298605L5.60578 4.47459L9.81531 0.270131C10.0463 0.0392166 10.4211 0.0391598 10.652 0.270131C10.883 0.501129 10.883 0.87586 10.652 1.10686L6.04574 5.707Z" fill="white"/>
             </svg>
           </span>
         </button>

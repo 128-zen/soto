@@ -1,63 +1,41 @@
 <footer class="footer">
-  {{!-- Submit a request Section --}}
-  {{#if settings.show_request_section}}
-    <div class="submit-request">
-      <div class="container">
-        <div class="submit-request__images fade-in-up">
-          <img src="{{settings.request_img_left}}" alt="icon">
-          <img src="{{settings.request_img_center}}" alt="icon">
-          <img src="{{settings.request_img_right}}" alt="icon">
-        </div>
-        <h6 class="fade-in-up">{{settings.request_heading}}</h6>
-        <p class="fade-in-up">{{settings.request_subtitle}}</p>
-        <div class="fade-in-up">
-          <a class="button button-secondary" href="{{settings.request_link}}">{{settings.request_link_text}}</a>
-        </div>
-        <img src="{{asset 'request_background.png'}}" alt="background">
+  <section class="submit-request">
+    <div class="container">
+      <h2 class="fade-in-up">{{settings.footer_heading}}</h2>
+      <p class="fade-in-up">{{settings.footer_text}}</p>
+      <div class="fade-in-up">
+        <a class="button button-secondary" href="{{settings.footer_link}}">{{settings.footer_link_text}}</a>
       </div>
     </div>
-  {{/if}}
-
+  </section>
   <div class="footer__top container">
-    <div>
-      {{#link 'help_center'}}
-        <img src="{{settings.footer_logo}}" alt="{{t 'home_page' name=help_center.name}}" />  
-      {{/link}}
-      <p>{{settings.footer_description}}</p>
-      
-    </div>
-    <div class="footer__lists">
-      <div class="footer__list">
-        <p>{{settings.footer_lists1_heading}}</p>
-        <ul>
-          <li><a href="{{settings.footer_lists1_item1_url}}">{{settings.footer_lists1_item1}}</a></li>
-          <li><a href="{{settings.footer_lists1_item2_url}}">{{settings.footer_lists1_item2}}</a></li>
-          <li><a href="{{settings.footer_lists1_item3_url}}">{{settings.footer_lists1_item3}}</a></li>
-          {{#if settings.show_footer_lists1_item4}}
-            <li><a href="{{settings.footer_lists1_item4_url}}">{{settings.footer_lists1_item4}}</a></li>
-          {{/if}}
-          {{#if settings.show_footer_lists1_item5}}
-            <li><a href="{{settings.footer_lists1_item5_url}}">{{settings.footer_lists1_item5}}</a></li>
-          {{/if}}
-        </ul>
-      </div>
-      {{#if settings.show_footer_lists2}}
-        <div class="footer__list">
-          <p>{{settings.footer_lists2_heading}}</p>
-          <ul>
-            <li><a href="{{settings.footer_lists2_item1_url}}">{{settings.footer_lists2_item1}}</a></li>
-            <li><a href="{{settings.footer_lists2_item2_url}}">{{settings.footer_lists2_item2}}</a></li>
-            <li><a href="{{settings.footer_lists2_item3_url}}">{{settings.footer_lists2_item3}}</a></li>
-            {{#if settings.show_footer_lists2_item4}}
-              <li><a href="{{settings.footer_lists2_item4_url}}">{{settings.footer_lists2_item4}}</a></li>
-            {{/if}}
-            {{#if settings.show_footer_lists2_item5}}
-              <li><a href="{{settings.footer_lists2_item5_url}}">{{settings.footer_lists2_item5}}</a></li>
-            {{/if}}
-          </ul>
-        </div>
+    <p>{{settings.footer_description}}</p>
+    <ul class="footer__list">
+      <li>
+        <a href="{{settings.footer_list_item1_url}}">{{settings.footer_list_item1}}</a>
+      </li>
+      <li>
+        <a href="{{settings.footer_list_item2_url}}">{{settings.footer_list_item2}}</a>
+      </li>
+      <li>
+        <a href="{{settings.footer_list_item3_url}}">{{settings.footer_list_item3}}</a>
+      </li>
+      {{#if settings.show_footer_list_item4}}
+        <li>
+          <a href="{{settings.footer_list_item4_url}}">{{settings.footer_list_item4}}</a>
+        </li>
       {{/if}}
-    </div>
+      {{#if settings.show_footer_list_item5}}
+        <li>
+          <a href="{{settings.footer_list_item5_url}}">{{settings.footer_list_item5}}</a>
+        </li>
+      {{/if}}
+      {{#if settings.show_footer_list_item6}}
+        <li>
+          <a href="{{settings.footer_list_item6_url}}">{{settings.footer_list_item6}}</a>
+        </li>
+      {{/if}}
+    </ul>
   </div>
   <div class="footer__bottom">
     <div class="container">

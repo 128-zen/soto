@@ -743,8 +743,6 @@ ul {
   background-color: transparent;
   position: relative;
   z-index: 99;
-  box-shadow: 0px 1px 2px 0px rgba(10, 13, 18, 0.05);
-  border-bottom: 1px solid $border_color;
 }
 
 .header .container {
@@ -752,7 +750,7 @@ ul {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  height: 71px;
+  height: 70px;
 }
 
 .header__lists {
@@ -762,8 +760,9 @@ ul {
   font-size: 16px;
 }
 .header__lists a {
-  line-height: 150%;
-  font-weight: 600;
+  font-size: 18px;
+  line-height: 110%;
+  font-weight: 400;
   color: $body_primary;
 }
 
@@ -848,8 +847,9 @@ ul {
 }
 
 .footer-language-selector button {
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 18px;
+  line-height: 110%;
+  font-weight: 400;
   color: $body_primary;
 }
 
@@ -857,11 +857,16 @@ ul {
   color: $hover_link_color;
 }
 .footer-language-selector button path {
-  stroke: $body_primary;
+  fill: $body_primary;
 }
 
 .footer-language-selector button:hover path {
-  stroke: $hover_link_color;
+  fill: $hover_link_color;
+}
+
+.footer-language-selector button:hover svg,
+.user-info > button svg {
+  transform: rotate(180deg);
 }
 
 .user-nav-list {
@@ -947,7 +952,7 @@ ul {
   border-bottom: solid 1px #ddd;
   right: 0;
   left: 0;
-  top: 72px;
+  top: 70px;
   z-index: 10;
   padding: 15px 0;
 }
@@ -1081,10 +1086,10 @@ ul {
   background-color: transparent;
 }
 .user-info > button path {
-  stroke: $body_primary;
+  fill: $body_primary;
 }
 .user-info > button:hover path, .user-info > button:focus path {
-  stroke: $hover_link_color;
+  fill: $hover_link_color;
 }
 .user-info > button::after {
   color: $link_color;
@@ -1144,8 +1149,8 @@ ul {
 
 /***** Footer *****/
 .submit-request {
-  display: none;
-  justify-content: center;
+  display: flex;
+  justify-content: center
 }
 
 .submit-request .container {
@@ -1153,121 +1158,60 @@ ul {
   z-index: 3;
   max-width: 1170px;
   overflow: hidden;
-  margin: 0 15px;
+  margin: 0 15px ;
+  border-radius: 20px;
+  padding: 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  border-radius: 16px;
-  padding: 30px 120px 40px;
-  background-color: $background_primary_color;
+  background-color: $background_secondary_color;
 }
 
-.submit-request .container > img {
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.submit-request__images {
+.submit-request .container div, .submit-request h2, .submit-request p {
   position: relative;
-  overflow: hidden;
-  width: 120px;
-  height: 56px;
-  margin-bottom: 30px;
+  z-index: 4;
 }
 
-.submit-request__images img {
-  position: absolute;
-  bottom: 0;
-  border-radius: 200px;
-  z-index: 1;
-  width: 48px;
-  height: 48px;
-  border: 2px solid $background_primary_color;
-}
-
-.submit-request__images img:first-of-type {
-  left: 0;
-}
-
-.submit-request__images img:nth-of-type(2) {
-  left: 50%;
-  transform: translateX(-50%);
-  width: 56px;
-  height: 56px;
-  z-index: 2;
-}
-
-.submit-request__images img:last-of-type {
-  right: 0;
-}
-
-.submit-request h6 {
-  max-width: 768px;
-  color: $text_secondary;
+.submit-request h2 {
+  margin-bottom: 20px;
 }
 
 .submit-request p {
   font-size: 18px;
-  line-height: 28px;
-  margin-top: 8px;
-  margin-bottom: 30px;
-  max-width: 604px;
-  color: $body_secondary;
+  margin-bottom: 40px;
 }
 
-.submit-request .button-secondary:hover {
-  background-color: $secondary_button_color;
-  color: $hover_link_color;
-}
-
-@media (max-width: 1023px) {
-  .submit-request .container {
-    padding: 30px 60px;
-  }
-  .submit-request h6 {
-    max-width: none;
+@media (max-width: 1279px) {
+  .footer__top {
+    padding-top: 80px;
   }
 }
-@media (max-width: 767px) { 
+@media (max-width: 767px) {
   .submit-request .container {
-    padding: 40px;
-  }
-  .submit-request__images {
-    margin-bottom: 20px;
+    padding: 40px 20px;
   }
 }
 
 .footer {
-  background-color: transparent;
+  padding-top: 120px;
+  border-radius: 60px 60px 0 0;
+  background-color: $body_background_color;
 }
 
 .footer__top {
   display: flex;
   justify-content: space-between;
-  padding-top: 60px;
+  align-items: center;
+  padding-top: 100px;
   padding-bottom: 60px;
   gap: 80px;
 }
 
-.footer__top > div:first-of-type {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  max-width: 320px;
+.footer__top p {
+  max-width: 440px;
 }
 
-.footer__top > div:first-of-type > a {
-  display: inline-block;
-  line-height: 0;
-}
-
-.footer__top > div:first-of-type > a img {
-  max-width: 160px;
-}
 
 .footer__social {
   display: flex;
@@ -1291,39 +1235,19 @@ ul {
   fill: $hover_link_color;
 }
 
-.footer__lists {
+.footer__list {
   display: flex;
-  gap: 55px;
-}
-
-.footer__list p {
-  margin-bottom: 16px;
-  font-weight: 600;
-  color: $hover_link_color;
-}
-
-.footer__list li {
-  margin-bottom: 10px;
-}
-
-.footer__list li:last-child {
-  margin-bottom: 0;
+  gap: 14px;
 }
 
 .footer__list a {
-  font-weight: 600;
-  color: $body_primary;
-}
-
-.footer__list a:hover {
-  color: $hover_link_color;
+  font-weight: 700;
 }
 
 .footer__bottom .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-direction: row-reverse;
   max-width: 1170px;
   padding: 30px 0;
   border-top: 1px solid $border_color;
@@ -1334,7 +1258,13 @@ ul {
 }
 
 .footer__right a {
-  font-weight: 600;
+  font-weight: 700;
+}
+
+@media (max-width: 1279px) {
+  .footer {
+    padding-top: 100px;
+  }
 }
 
 @media (max-width: 1199px) {
@@ -1344,10 +1274,14 @@ ul {
 }
 
 @media (max-width: 1023px) {
+  .footer {
+    padding-top: 80px;
+  }
   .footer__top {
     flex-direction: column;
     align-items: center;
     gap: 40px;
+    padding-top: 80px;
   }
   .footer__top p {
     text-align: center;
@@ -1355,16 +1289,18 @@ ul {
   .footer__list {
     align-self: center;
   }
-  .footer__top > div:first-of-type {
-    align-items: center;
-  }
 }
 
 @media (max-width: 767px) {
-  .footer__lists {
+  .footer {
+    padding-top: 60px;
+  }
+  .footer__list {
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+  }
+  .footer__top {
+    padding-top: 60px;
   }
   .footer__bottom .container {
     flex-direction: column;
@@ -7242,8 +7178,9 @@ html[dir=rtl] .notification-left-aligned {
   color: $body_primary;
 }
 .dropdown-toggle span {
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 110%;
 }
 .dropdown-toggle:hover {
   text-decoration: none;
