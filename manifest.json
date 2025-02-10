@@ -1,7 +1,7 @@
 {
   "name": "Soto 128",
   "author": "128zen",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "api_version": 3,
   "default_locale": "en-us",
   "settings": [
@@ -396,34 +396,6 @@
       "label": "Homepage Banner Section",
       "variables": [
         {
-          "identifier": "show_hero_badge",
-          "type": "checkbox",
-          "description": "Show hero badge",
-          "label": "Toggle Badge Component",
-          "value": true
-        },
-        {
-          "identifier": "hero_badge_text1",
-          "type": "text",
-          "description": "Enter the text on the left",
-          "label": "Hero Badge Text",
-          "value": "Help center"
-        },
-        {
-          "identifier": "hero_badge_text2",
-          "type": "text",
-          "description": "Enter the text on the right",
-          "label": "Hero Badge Text",
-          "value": "New documentation"
-        },
-        {
-          "identifier": "hero_badge_link",
-          "type": "text",
-          "description": "Insert link",
-          "label": "Hero Badge Link",
-          "value": "#"
-        },
-        {
           "identifier": "hero_heading",
           "type": "text",
           "description": "Enter the heading in the top section",
@@ -442,13 +414,6 @@
           "type": "checkbox",
           "description": "Show hero subtitle",
           "label": "Toggle Subtitle Component",
-          "value": true
-        },
-        {
-          "identifier": "show_hero_elements",
-          "type": "checkbox",
-          "description": "Show banner background elements",
-          "label": "Toggle Banner Background Elements",
           "value": true
         }
       ]

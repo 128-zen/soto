@@ -859,7 +859,7 @@ ul {
 }
 
 .footer-language-selector button:hover svg,
-.user-info > button svg {
+.user-info > button:hover svg {
   transform: rotate(180deg);
 }
 
@@ -1499,102 +1499,49 @@ ul {
 .hero {
   overflow: hidden;
   position: relative;
+  margin-top: -70px;
 }
 .hero .container {
   display: flex;
-  padding-top: 100px;
+  padding-top: 170px;
 }
 
 .hero__content {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  gap: 40px;
   text-align: left;
-  max-width: 535px;
   width: 100%;
   z-index: 3;
 }
-.hero__content > p {
+
+.hero__content-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 110px;
+} 
+
+.hero__content-top > h1 {
+  max-width: 495px;
+}
+
+.hero__content-top > p {
+  font-size: 22px;
+  letter-spacing: -0.55px;
   margin-bottom: 40px;
-  max-width: 645px;
+  max-width: 495px;
 }
 
-.hero__badge {
-  position: relative;
+.hero__content-bottom {
   display: flex;
-  gap: 12px;
-  align-items: center;
-  padding: 4px 10px 4px 4px;
-  border-radius: 10px;
-  box-shadow: 0px 1px 2px 0px rgba(10, 13, 18, 0.05);
-  margin-bottom: 16px;
-  cursor: pointer;
-  background-color: $body_background_color;
-  border: 1px solid $border_color;
-}
+  align-items: flex-end;
+  gap: 110px;
+} 
 
-.hero__badge p {
-  transition: all .3s ease;
-}
-
-.hero__badge:hover p {
-  color: $hover_link_color;
-}
-
-.hero__badge:hover div:last-of-type svg path {
-  stroke: $hover_link_color;
-}
-
-.hero__badge > div {
-  display: flex;
-  gap: 4px;
-  align-items: center;
-}
-
-.hero__badge > a {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  bottom: 0;
-  left: 0;
-  border-radius: 10px;
-}
-
-.hero__badge > div:first-of-type {
-  padding: 2px 8px;
-  border-radius: 6px;
-  box-shadow: 0px 1px 2px 0px rgba(10, 13, 18, 0.05);
-  border: 1px solid $border_color;
-}
-
-.hero__badge > div:first-of-type svg circle:first-of-type {
-  fill: $background_primary_color;
-}
-
-.hero__badge > div:first-of-type svg circle:last-of-type {
-  stroke: $background_primary_color;
-}
-
-.hero > svg {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  z-index: 1;
-}
-
-.hero > svg:first-of-type radialGradient stop {
-  stop-color: $background_primary_color;
-}
-
-@media (max-width: 1279px) {
-  .hero .container {
-    padding-top: 60px;
-  }
-}
 
 @media (max-width: 1023px) {
-  .hero__content {
-    max-width: 90%;
+  .hero .container {
+    padding-top: 150px;
   }
   .hero__content p {
     max-width: 575px;
@@ -1607,18 +1554,18 @@ ul {
     margin: 0 auto;
   }
   .hero .container {
-    padding-top: 60px;
+    padding-top: 130px;
   }
 }
 
 .hero-inner {
   position: relative;
-  max-width: 490px;
+  max-width: 495px;
   width: 100%;
 }
 
 .hero .search, .error-page .search, .section-page .search {
-  max-width: 490px;
+  max-width: 495px;
 }
 
 .hero .search input[type=search], .error-page .search input[type=search], .section-page .search input[type=search] {
@@ -1672,26 +1619,25 @@ ul {
 }
 .popular-keywords__items {
   display: flex;
-  gap: 4px;
+  gap: 15px;
   flex-wrap: wrap;
   flex: 1;
 }
 
 .popular-keywords a {
   font-size: 14px;
-  font-weight: 500;
-  line-height: 150%;
-  padding: 4px 8px;
-  border-radius: 6px;
-  background-color: $body_background_color;
-  border: 1px solid $border_color;
-  color: $body_primary;
-  box-shadow: 0px 1px 2px 0px rgba(10, 13, 18, 0.05);
+  font-weight: 700;
+  line-height: 120%;
+  padding: 7px 8px;
+  border-radius: 4px;
+  background-color: transparent;
+  border: 1px solid $primary_button_color;
+  color: $text_primary;
 }
 
 .popular-keywords a:hover {
   background-color: $primary_button_color;
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  border: 1px solid $primary_button_color;
   color: $text_secondary;
 }
 
