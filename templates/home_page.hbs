@@ -73,29 +73,31 @@
 {{!-- Categories Section --}}
 <section class="categories section">
   <div class="container">
-    <div class="categories__header">
-      <h2 class="fade-in-up">{{settings.category2_heading}}</h2>
-      {{#if settings.show_category2_subtitle}}
-        <p class="fade-in-up">{{settings.category2_subtitle}}</p>
-      {{/if}}
-    </div>
-    <div class="categories__list">
-      {{#each categories}}
-        <div class="categories__section fade-in-up">
-          <h5><a href="{{url}}">{{name}}</a></h5>
-          {{#if description}}
-            <p>{{description}}</p>
-          {{/if}}
-          <div>
-            {{t 'see_all_sections'}}
-            <a href="{{url}}"></a>
-            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="12" viewBox="0 0 15 12" fill="none">
-              <path d="M9.15283 3.2135L12.3434 6.10183L9.15283 8.99016V3.2135Z" fill="white"/>
-              <path d="M2.77234 2.05725V6.10092H12.3439M12.3439 6.10092L9.15341 3.21258V8.98923L12.3439 6.10092Z" stroke="white" stroke-width="1.73281"/>
-            </svg>
+    <div class="categories__wrap">
+      <div class="categories__header">
+        <h2 class="fade-in-up">{{settings.category2_heading}}</h2>
+        {{#if settings.show_category2_subtitle}}
+          <p class="fade-in-up">{{settings.category2_subtitle}}</p>
+        {{/if}}
+      </div>
+      <div class="categories__list">
+        {{#each categories}}
+          <div class="categories__section fade-in-up">
+            <h5><a href="{{url}}">{{name}}</a></h5>
+            {{#if description}}
+              <p>{{description}}</p>
+            {{/if}}
+            <div>
+              {{t 'see_all_sections'}}
+              <a href="{{url}}"></a>
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="12" viewBox="0 0 15 12" fill="none">
+                <path d="M9.15283 3.2135L12.3434 6.10183L9.15283 8.99016V3.2135Z" fill="white"/>
+                <path d="M2.77234 2.05725V6.10092H12.3439M12.3439 6.10092L9.15341 3.21258V8.98923L12.3439 6.10092Z" stroke="white" stroke-width="1.73281"/>
+              </svg>
+            </div>
           </div>
-        </div>
-      {{/each}}
+        {{/each}}
+      </div>
     </div>
   </div>
 </section>
