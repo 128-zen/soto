@@ -16,30 +16,31 @@
 
     {{!-- Main Content --}}
     <section class="section-page__content">
-      <div class="section-page__heading">
-        <h1 class="fade-in-up">{{section.name}}</h1>
-        {{#if settings.show_follow_section}}
-          <div class="section-subscribe fade-in-up">{{subscribe}}</div>
+      <div class="section-page__wrap">
+        <div class="section-page__heading">
+          <h1 class="fade-in-up">{{section.name}}</h1>
+          {{#if settings.show_follow_section}}
+            <div class="section-subscribe fade-in-up">{{subscribe}}</div>
+          {{/if}}
+        </div>
+        {{#if section.description}}
+            <p class="fade-in-up">{{section.description}}</p>
+        {{/if}}
+
+        {{#if section.articles}}
+          <ul class="section-page__articles">
+            {{#each section.articles}}
+              <li class="fade-in-up">
+                <div class="section-page__article">
+                  <h5><a href="{{url}}">{{title}}</a></h5>
+                  <div>{{body}}</div>
+                </div>
+              </li>
+            {{/each}}
+          </ul>
+        {{else}}
         {{/if}}
       </div>
-      {{#if section.description}}
-          <p class="fade-in-up">{{section.description}}</p>
-      {{/if}}
-
-      {{#if section.articles}}
-        <ul class="section-page__articles">
-          {{#each section.articles}}
-            <li class="fade-in-up">
-              <div class="section-page__article">
-                <h5><a href="{{url}}">{{title}}</a></h5>
-                <div>{{body}}</div>
-              </div>
-            </li>
-          {{/each}}
-        </ul>
-      {{else}}
-      {{/if}}
-
     </section>
   </div>
 
