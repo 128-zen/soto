@@ -467,23 +467,23 @@ ul {
 
 /***** Buttons *****/
 .subscriptions-subscribe button, .requests-table-toolbar .organization-subscribe button, .community-follow button, .article-subscribe button, .section-subscribe button, .split-button button, .article-subscribe button, .community-follow button, .comment-form-controls input[type=submit] {
-  border-radius: 8px;
   cursor: pointer;
   display: inline-block;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 1.5;
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: -0.4px;
+  padding: 10px 30px;
+  font-weight: 700;
+  border-radius: 4px;
   margin: 0;
   text-align: center;
   transition: all .3s ease;
-  padding: 10px 14px;
-  background-color: $secondary_button_color;
-  border: 1px solid $border_color;
-  color: $secondary_button_text_color;
+  background-color: $primary_button_color;
+  border: 1px solid $primary_button_color;
+  color: $text_secondary;
   user-select: none;
   white-space: nowrap;
   -webkit-touch-callout: none;
-  box-shadow: 0px 0px 0px 1px rgba(10, 13, 18, 0.18) inset, 0px -2px 0px 0px rgba(10, 13, 18, 0.05) inset, 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
 }
 @media (min-width: 768px) {
 .subscriptions-subscribe button, .requests-table-toolbar .organization-subscribe button, .community-follow button, .article-subscribe button, .section-subscribe button, .split-button button {
@@ -497,21 +497,20 @@ ul {
 
 
 .article-subscribe button:hover, .community-follow button:hover, .subscriptions-subscribe button:hover, .section-subscribe button:hover, .split-button button:hover {
-  background-color: $primary_button_color;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  color: $text_secondary;
+  background-color: $secondary_button_color;
+  border: 1px solid $secondary_button_color;
+  color: $secondary_button_text_color;
 }
 
 .comment-form-controls input[type=submit] {
   background-color: $primary_button_color;
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  border: 1px solid $primary_button_color;
   color: $text_secondary;
-  box-shadow: 0px 0px 0px 1px rgba(10, 13, 18, 0.18) inset, 0px -2px 0px 0px rgba(10, 13, 18, 0.05) inset, 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
 }
 
 .comment-form-controls input[type=submit]:hover {
   background-color: $secondary_button_color;
-  border: 1px solid $border_color;
+  border: 1px solid $secondary_button_color;
   color: $secondary_button_text_color;
 }
 
@@ -3514,6 +3513,15 @@ ul {
   }
   .section-page__articles li {
     width: 100%;
+    padding: 30px 0;
+    border-bottom: 1px solid $background_primary_color;
+  }
+  .section-page__articles li:first-of-type {
+    padding-top: 0;
+  }
+  .section-page__articles li:last-of-type {
+    padding-bottom: 0;
+    border: none;
   }
 }
 
@@ -3534,7 +3542,6 @@ ul {
     width: 100%;
     position: static;
     max-width: none;
-    box-shadow: 0px 32px 64px -12px rgba(10, 13, 18, 0.14), 0px 5px 5px -2.5px rgba(10, 13, 18, 0.04);
   }
   .article-page__nav {
     box-shadow: none;
