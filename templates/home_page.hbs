@@ -76,13 +76,13 @@
     <div class="categories__header">
       <h2 class="fade-in-up">{{settings.category2_heading}}</h2>
       {{#if settings.show_category2_subtitle}}
-        <p class="p-large fade-in-up">{{settings.category2_subtitle}}</p>
+        <p class="fade-in-up">{{settings.category2_subtitle}}</p>
       {{/if}}
     </div>
     <div class="categories__list">
       {{#each categories}}
         <div class="categories__section fade-in-up">
-          <h6><a href="{{url}}">{{name}}</a></h6>
+          <h5><a href="{{url}}">{{name}}</a></h5>
           {{#if description}}
             <p>{{description}}</p>
           {{/if}}
