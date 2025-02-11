@@ -1,4 +1,4 @@
-<div class="article-page section">
+<div class="article-page">
   <div class="container">
 
     {{!-- Sidebar --}}
@@ -11,7 +11,7 @@
         {{search scoped=settings.scoped_kb_search submit=false}}
       </div>
       <div class="nav__articles">
-        <h6><a href="{{section.url}}">{{section.name}}</a></h6>
+        <h5><a href="{{section.url}}">{{section.name}}</a></h5>
         <ul>
           {{#each section.articles}}
             <li>
