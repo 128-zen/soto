@@ -62,12 +62,12 @@
           categoryBlock.classList.add('nav__category');
           const categoryElement = document.createElement('div');
           categoryElement.classList.add('nav__heading');
-          const categoryHeading = document.createElement('h6');
+          const categoryHeading = document.createElement('h5');
           const sectionsBlock = document.createElement('div');
           sectionsBlock.classList.add('nav__sections');
           categoryHeading.textContent = categoryAndSections.category.name;
           categoryElement.appendChild(categoryHeading)
-          const svgString = '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8.00008 3.3335L8.00008 12.6668M8.00008 12.6668L12.6667 8.00016M8.00008 12.6668L3.33341 8.00016" stroke="#535862" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+          const svgString = '<svg xmlns="http://www.w3.org/2000/svg" width="10" height="5" viewBox="0 0 10 5" fill="none"><path d="M8.99927 0.53125L4.99927 4.46875L0.999268 0.53125" stroke="white" stroke-linecap="round" stroke-linejoin="round"/></svg>';
           const parser = new DOMParser();
           let svgElement = parser.parseFromString(svgString, 'image/svg+xml').querySelector('svg');
           categoryElement.appendChild(svgElement)

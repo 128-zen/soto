@@ -3305,30 +3305,18 @@ ul {
 .section-page > .container {
   position: relative;
   display: flex;
-  margin-top: -110px;
+  margin-top: -70px;
 }
 
 .section-page > div:first-of-type {
   position: relative;
   padding-top: 100px;
-  padding-bottom: 210px;
   overflow: hidden;
-}
-
-.section-page > div:first-of-type .hero-inner {
-  margin-top: 40px;
 }
 
 .section-page > div:first-of-type p {
   margin-top: 20px;
   max-width: 450px;
-}
-
-.section-page > div:first-of-type > svg {
-  position: absolute;
-  z-index: -1;
-  right: 0;
-  bottom: 0;
 }
 
 .nav {
@@ -3386,7 +3374,6 @@ ul {
   border-radius: 12px;
   background-color: $body_background_color;
   border: 1px solid $border_color;
-  box-shadow: 0px 32px 64px -12px rgba(10, 13, 18, 0.14), 0px 5px 5px -2.5px rgba(10, 13, 18, 0.04);
 }
 
 .nav__category {
@@ -3479,10 +3466,6 @@ ul {
   justify-content: space-between;
   align-items: center;
   gap: 30px;
-}
-
-.section-page__heading h1 {
-  max-width: 540px;
 }
 
 .section-page__articles {
