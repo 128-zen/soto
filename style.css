@@ -1951,7 +1951,7 @@ ul {
   font-family: $heading_font;
 }
 
-.categories__section > div:last-of-type {
+.categories__list .categories__section > div:last-of-type {
   position: relative;
   display: flex;
   gap: 10px;
@@ -1963,7 +1963,7 @@ ul {
   color: $text_primary;
 }
 
-.categories__section > div:last-of-type > a {
+.categories__list .categories__section > div:last-of-type > a {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -1971,23 +1971,23 @@ ul {
   bottom: 0;
 }
 
-.categories__section > div:last-of-type:hover {
+.categories__list .categories__section > div:last-of-type:hover {
   color: $hover_link_color;
 }
 
-.categories__section > div:last-of-type svg path:first-of-type {
+.categories__list .categories__section > div:last-of-type svg path:first-of-type {
   fill: $text_primary;
 }
 
-.categories__section > div:last-of-type svg path:first-of-type {
+.categories__list .categories__section > div:last-of-type svg path:first-of-type {
   stroke: $text_primary;
 }
 
-.categories__section > div:last-of-type:hover svg path:first-of-type {
+.categories__list .categories__section > div:last-of-type:hover svg path:first-of-type {
   fill: $hover_link_color;
 }
 
-.categories__section > div:last-of-type:hover svg path:first-of-type {
+.categories__list .categories__section > div:last-of-type:hover svg path:first-of-type {
   stroke: $hover_link_color;
 }
 
@@ -2195,23 +2195,14 @@ ul {
 .categories__head {
   position: relative;
   overflow: hidden;
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  gap: 30px;
-  padding: 50px 50px 180px;
-  border-radius: 12px;
-  border: 1px solid $border_color;
-  background-color: $category_background_color;
+  padding: 40px 40px 50px;
 }
 
-.categories__head > svg {
-  position: absolute;
-  left: 0;
-  top: 0;
+.categories__head > div {
+  margin-top: 60px;
 }
 
-.categories__head > div:nth-of-type(2), .videos__head > div {
+.categories__head > div, .videos__head > div {
   flex: 0 0 auto;
 }
 
@@ -2226,15 +2217,18 @@ ul {
 }
 
 .categories__sections {
+  padding: 50px 40px;
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
   position: relative;
   z-index: 5;
+  background: linear-gradient(180deg, rgba(175, 185, 194, 0.10) 0%, rgba(2, 28, 24, 0.00) 100%);
 }
 
 .categories__item {
   width: calc(50% - 10px);
+  border-radius: 4px;
   border-top: 10px solid $border_color;
   border-right: 1px solid $border_color;
   border-bottom: 1px solid $border_color;
@@ -2252,10 +2246,10 @@ ul {
 }
 
 .categories.categories-layout2 .categories__section {
-  width: calc(33.3% - 20px);
+  width: calc(50% - 15px);
 }
 
-.categories__section:nth-child(n+7) {
+.categories__section:nth-child(n+3) {
   display: none;
 }
 
