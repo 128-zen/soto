@@ -290,15 +290,6 @@
           submitRequest.classList.add('padding-top');
       }
     }
-
-    if(sections[1].classList.contains('introduction')) {
-      const banner = document.querySelector('.hero');
-      if (banner) {
-        banner.classList.add('padding-bottom');
-      }
-    } else {
-      sections[1].classList.add('padding-top');
-    }
   }
 
 
