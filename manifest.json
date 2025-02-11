@@ -1,7 +1,7 @@
 {
   "name": "Soto 128",
   "author": "128zen",
-  "version": "1.0.22",
+  "version": "1.0.23",
   "api_version": 3,
   "default_locale": "en-us",
   "settings": [
@@ -630,28 +630,28 @@
           "type": "text",
           "description": "Enter section subtitle",
           "label": "Section Subtitle",
-          "value": "Everything you need to know about the product and billing."
+          "value": "Easily create documentation, knowledge-base, FAQ, forum and more"
         },
         {
           "identifier": "faq_item1_heading",
           "type": "text",
           "description": "Enter question",
           "label": "Item 1 Question",
-          "value": "How do I get started with Dharma?"
+          "value": "Lorem ipsum dolor sit amet."
         },
         {
           "identifier": "faq_item1_text",
           "type": "text",
           "description": "Enter answer",
           "label": "Item 1 Answer",
-          "value": "To get started, simply sign up for an account, follow our onboarding guide, and customize your settings to suit your needs. You can find our getting started guide in the Dharma section of the help center."
+          "value": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, similique."
         },
         {
           "identifier": "faq_item2_heading",
           "type": "text",
           "description": "Enter question",
           "label": "Item 2 Question",
-          "value": "How can I reset my password?"
+          "value": "Lorem ipsum dolor sit amet."
         },
         {
           "identifier": "faq_item2_text",
@@ -665,7 +665,7 @@
           "type": "text",
           "description": "Enter question",
           "label": "Item 3 Question",
-          "value": "How do I cancel or change my subscription?"
+          "value": "Lorem ipsum dolor sit amet."
         },
         {
           "identifier": "faq_item3_text",
@@ -679,7 +679,7 @@
           "type": "text",
           "description": "Enter question",
           "label": "Item 4 Question",
-          "value": "What should I do if I encounter an error or issue?"
+          "value": "Lorem ipsum dolor sit amet."
         },
         {
           "identifier": "faq_item4_text",
@@ -691,7 +691,7 @@
         {
           "identifier": "show_faq_item5",
           "type": "checkbox",
-          "description": "Show Item 5",
+          "description": "Show item",
           "label": "Toggle Item 5",
           "value": true
         },
@@ -700,7 +700,7 @@
           "type": "text",
           "description": "Enter question",
           "label": "Item 5 Question",
-          "value": "What should I do if I encounter an error or issue?"
+          "value": "Lorem ipsum dolor sit amet."
         },
         {
           "identifier": "faq_item5_text",
@@ -712,7 +712,7 @@
         {
           "identifier": "show_faq_item6",
           "type": "checkbox",
-          "description": "Show Item 6",
+          "description": "Show item",
           "label": "Toggle Item 6",
           "value": true
         },
@@ -721,13 +721,55 @@
           "type": "text",
           "description": "Enter question",
           "label": "Item 6 Question",
-          "value": "What should I do if I encounter an error or issue?"
+          "value": "Lorem ipsum dolor sit amet."
         },
         {
           "identifier": "faq_item6_text",
           "type": "text",
           "description": "Enter answer",
           "label": "Item 6 Answer",
+          "value": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, similique."
+        },
+        {
+          "identifier": "show_faq_item7",
+          "type": "checkbox",
+          "description": "Show item",
+          "label": "Toggle Item 7",
+          "value": true
+        },
+        {
+          "identifier": "faq_item7_heading",
+          "type": "text",
+          "description": "Enter question",
+          "label": "Item 7 Question",
+          "value": "Lorem ipsum dolor sit amet."
+        },
+        {
+          "identifier": "faq_item7_text",
+          "type": "text",
+          "description": "Enter answer",
+          "label": "Item 7 Answer",
+          "value": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, similique."
+        },
+        {
+          "identifier": "show_faq_item8",
+          "type": "checkbox",
+          "description": "Show item",
+          "label": "Toggle Item 8",
+          "value": true
+        },
+        {
+          "identifier": "faq_item8_heading",
+          "type": "text",
+          "description": "Enter question",
+          "label": "Item 8 Question",
+          "value": "Lorem ipsum dolor sit amet."
+        },
+        {
+          "identifier": "faq_item8_text",
+          "type": "text",
+          "description": "Enter answer",
+          "label": "Item 8 Answer",
           "value": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, similique."
         }
       ]
