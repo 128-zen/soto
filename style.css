@@ -2476,35 +2476,10 @@ ul {
 /* VIDEOS */
 
 .videos {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
 
-.videos.last-section {
-  padding-bottom: 320px;
-}
-
-.videos .container {
-  position: relative;
-  max-width: 1170px;
-  overflow: hidden;
-  margin: 0 15px -200px;
-  border-radius: 20px;
-  padding: 40px;
-  background-color: $background_secondary_color;
-}
-
-.videos__head {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 30px;
-  text-align: left;
 }
 
 .videos__list{
-  margin-top: 60px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -2513,45 +2488,45 @@ ul {
 }
 
 .videos__item{
-  max-width: 370px;
   width: calc(33.3% - 20px);
   position: relative;
   transition: all .3s ease;
 }
 
+.videos__item-head {
+  width: calc(33.3% - 20px);
+  border-radius: 4px;
+  padding: 50px 40px;
+  background-color: $background_secondary_color;
+}
+
+.videos__item-head p {
+  margin: 25px 0 60px;
+}
+
 .videos__img {
   display: flex;
+  align-items: flex-end;
   position: relative;
   overflow: hidden;
   z-index: 2;
-  height: 400px;
-  border-radius: 20px;
+  min-height: 346px;
+  border-radius: 4px;
   transition: all .3s ease;
 }
 
 .videos__img img {
+  position: absolute;
   object-fit: cover;
   width: 100%;
+  height: 100%;
+  z-index: -1;
   transition: all .5s ease;
 }
 
 .videos__img > div {
-  position: absolute;
-  bottom: 15px;
-  left: 15px;
-  right: 15px;
-  border-radius: 20px;
   text-align: left;
-  padding: 20px;
-  background-color: $background_tertiary_color;
-}
-
-.videos__img > div div {
-  display: flex;
-  gap: 30px;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 15px;
+  padding: 40px 30px;
 }
 
 .videos__img > div svg {
@@ -2561,6 +2536,7 @@ ul {
 
 .videos__item h4 {
   display: inline-block;
+  margin: 40px 0 18px;
   cursor: pointer;
   transition: all .3s ease;
 }
@@ -2570,15 +2546,15 @@ ul {
 }
 
 .videos__img > div svg rect {
-  fill: $background_primary_color;
+  stroke: $background_primary_color;
 }
 
 .videos__img > div svg path {
-  fill: $text_secondary;
+  fill: $text_primary;
 }
 
 .videos__img > div svg:hover rect {
-  fill: $primary_button_color;
+  stroke: $primary_button_color;
 }
 
 .videos__img > div svg:hover path {
