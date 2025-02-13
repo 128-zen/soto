@@ -692,13 +692,13 @@ ul {
 .form footer input {
   display: block;
   width: 100%;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 150%; /* 21.6px */
-  letter-spacing: 0.63px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 120%; /* 21.6px */
+  letter-spacing: -0.4px;
   padding: 10px 30px;
   cursor: pointer;
-  border-radius: 8px;
+  border-radius: 4px;
   background-color: $primary_button_color;
   border: 1px solid rgba(255, 255, 255, 0.12);
   color: $text_secondary;
@@ -1858,6 +1858,7 @@ ul {
 }
 .blocks-item-title {
   display: block;
+  font-weight: 400;
   width: fit-content;
   margin: 0 auto;
 }
@@ -2820,7 +2821,7 @@ ul {
 
 /***** Submit a request page *****/
 .submit-request-page, .new-post-page {
-  padding: 80px 0 100px;
+  padding-top: 80px;
   position: relative;
   overflow: hidden;
 }
@@ -2862,16 +2863,9 @@ ul {
   border-radius: 0 0 8px 8px;
 }
 
-@media(max-width: 1023px) {
-  .submit-request-page, .new-post-page {
-    padding-bottom: 80px;
-  }
-}
-
 @media(max-width: 767px) {
   .submit-request-page, .new-post-page {
     padding-top: 60px;
-    padding-bottom: 60px;
   }
   .submit-request-page .container, .new-post-page .container {
     gap: 30px;
