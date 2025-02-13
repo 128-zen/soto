@@ -148,15 +148,8 @@
                 {{/link}}
               </span>
             </div>
-            <h6><a href="{{url}}">{{title}}</a></h6>
+            <h5><a href="{{url}}">{{title}}</a></h5>
             <div class="featured-posts-item-body">{{details}}</div>
-            <div class="featured-posts-btn">
-              <a href="{{url}}"></a>
-              {{t 'see_more'}}
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
-                <path d="M4.1665 10.4998H15.8332M15.8332 10.4998L9.99984 4.6665M15.8332 10.4998L9.99984 16.3332" stroke="#418CFE" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </div>
           </li>
         {{/each}}
       </ul>
@@ -164,7 +157,7 @@
   {{/if}}
 
   {{!-- Recent activity --}}
-  <section class="community-activity activity section">
+  <section class="community-activity activity">
     <div class="container fade-in-up">
       {{#if help_center.community_enabled}}
         {{recent_activity scope='community'}}
