@@ -200,9 +200,12 @@
 
   if (videoThumbnails) {
     videoThumbnails.forEach(function (thumbnail) {
-      let thumbnailImage = thumbnail.querySelector('.videos__img');
-
+      //let thumbnailImage = thumbnail.querySelector('.videos__img');
+      let thumbnailImage = thumbnail.querySelector('svg');
+      let thumbnailHeading = thumbnail.querySelector('h4');
+      
       thumbnailImage.addEventListener('click', openModal);
+      thumbnailHeading.addEventListener('click', openModal);
 
       function openModal() {
         let videoSrc = thumbnail.querySelector('img').getAttribute('data-video-src');

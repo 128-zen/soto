@@ -1,7 +1,7 @@
 {
   "name": "Soto 128",
   "author": "128zen",
-  "version": "1.0.32",
+  "version": "1.0.33",
   "api_version": 3,
   "default_locale": "en-us",
   "settings": [
@@ -605,6 +605,100 @@
           "description": "Show categories section layout 1 subtitle",
           "label": "Toggle Layout 1 Subtitle",
           "value": true
+        }
+      ]
+    },
+    {
+      "label": "Homepage Videos Section",
+      "variables": [
+        {
+          "identifier": "show_videos",
+          "type": "checkbox",
+          "description": "Show section",
+          "label": "Toggle Section",
+          "value": true
+        },
+        {
+          "identifier": "videos_heading",
+          "type": "text",
+          "description": "Enter section heading",
+          "label": "Section Heading",
+          "value": "Useful videos"
+        },
+        {
+          "identifier": "videos_description",
+          "type": "text",
+          "description": "Enter section description",
+          "label": "Section Description",
+          "value": "We have answers for all your questions. Let’s verify all the information to find out where your shipment is."
+        },
+        {
+          "identifier": "videos_button",
+          "type": "text",
+          "description": "Enter text",
+          "label": "Section Button Text",
+          "value": "Watch More"
+        },
+        {
+          "identifier": "videos_button_link",
+          "type": "text",
+          "description": "Insert link",
+          "label": "Section Button Link",
+          "value": "#"
+        },
+        {
+          "identifier": "videos_img1",
+          "type": "file",
+          "description": "Choose image",
+          "label": "Item 1 Image"
+        },
+        {
+          "identifier": "videos_link1",
+          "type": "text",
+          "description": "Insert link",
+          "label": "Item 1 Link",
+          "value": "#"
+        },
+        {
+          "identifier": "videos_heading1",
+          "type": "text",
+          "description": "Enter heading",
+          "label": "Item 1 Heading",
+          "value": "Useful videos"
+        },
+        {
+          "identifier": "videos_description1",
+          "type": "text",
+          "description": "Enter description",
+          "label": "Item 1 Description",
+          "value": "We have answers for all your questions.We're here to help!"
+        },
+        {
+          "identifier": "videos_img2",
+          "type": "file",
+          "description": "Choose image",
+          "label": "Item 2 Image"
+        },
+        {
+          "identifier": "videos_link2",
+          "type": "text",
+          "description": "Insert link",
+          "label": "Item 2 Link",
+          "value": "#"
+        },
+        {
+          "identifier": "videos_heading2",
+          "type": "text",
+          "description": "Enter heading",
+          "label": "Item 2 Heading",
+          "value": "Useful videos"
+        },
+        {
+          "identifier": "videos_description2",
+          "type": "text",
+          "description": "Enter description",
+          "label": "Item 2 Description",
+          "value": "We have answers for all your questions.We're here to help!"
         }
       ]
     },
