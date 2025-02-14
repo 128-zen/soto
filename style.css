@@ -1984,6 +1984,10 @@ ul {
   color: $text_primary;
 }
 
+.categories__list .categories__section > div:last-of-type {
+  margin-top: 0;
+}
+
 .categories__list .categories__section > div:last-of-type > a, .category-page__section-heading div > a {
   position: absolute;
   height: 100%;
@@ -2219,7 +2223,6 @@ ul {
 .categories__list {
   padding: 40px;
   display: flex;
-  gap: 30px;
   flex-wrap: wrap;
   position: relative;
   z-index: 5;
@@ -2255,7 +2258,7 @@ ul {
   width: calc(50% - 15px);
 }
 
-.categories__section:nth-child(n+3) {
+.categories.categories-layout2 .categories__section:nth-child(n+3) {
   display: none;
 }
 
@@ -2337,7 +2340,10 @@ ul {
     padding-top: 80px;
   }
   .categories.categories-layout2 .categories__section {
-    width: calc(50% - 15px);
+    width: 100%;
+  }
+  .categories .categories__wrap, .categories__sections {
+    flex-direction: column;
   }
 }
 @media (max-width: 767px) {
@@ -2345,15 +2351,12 @@ ul {
     padding-top: 60px;
   }
   .categories__sections, .categories__list {
-    gap: 20px;
     justify-content: center;
   }
-  .categories__head {
-    flex-direction: column;
-    gap: 20px;
-    text-align: center;
-  }
   .categories__section, .categories.categories-layout2 .categories__section {
+    width: 100%;
+  }
+  .categories__item {
     width: 100%;
   }
   .categories__section ul {
@@ -2362,16 +2365,26 @@ ul {
   .categories .container {
     gap: 60px;
   }
-  .categories__header p, .categories__head p {
-    max-height: 72px;
-  }
   .categories__head > div:nth-of-type(2), .videos__head > div {
     display: none;
   }
-  .categories__header > svg, .categories__head > svg {
-    left: auto;
-    right: 0;
-    top: -170px;
+  .categories__header h2, .categories__head h2 {
+    margin-bottom: 18px;
+  }
+  .categories__head > div {
+    margin-top: 40px;
+  }
+  .categories__list .categories__section {
+    width: 100%;
+    padding: 30px 0;
+    border-bottom: 1px solid $background_primary_color;
+  }
+  ..categories__list .categories__section:first-of-type {
+    padding-top: 0;
+  }
+  .categories__list .categories__section:last-of-type {
+    padding-bottom: 0;
+    border: none;
   }
 }
 
