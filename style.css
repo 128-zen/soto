@@ -5898,7 +5898,7 @@ ul {
 }
 .request-main .comment-show-container {
   border-radius: 4px;
-  border: 1px solid primary_button_color;
+  border: 1px solid $primary_button_color;
   color: $text_secondary;
   background-color: $primary_button_color;
   text-align: inherit;
@@ -6124,7 +6124,6 @@ ul {
 .profile-header {
   padding-top: 60px;
   padding-bottom: 30px;
-  margin-bottom: 30px;
   position: relative;
   overflow: hidden;
 }
@@ -6385,7 +6384,6 @@ ul {
 
 .profile-section {
   width: 100%;
-  margin-bottom: 100px;
 }
 @media (min-width: 1024px) {
   .profile-section {
@@ -6763,16 +6761,7 @@ ul {
   margin: auto;
 }
 
-@media (max-width: 1279px) {
-  .profile-section {
-    margin-bottom: 100px;
-  }
-}
-
 @media (max-width: 1023px) {
-  .profile-section {
-    margin-bottom: 80px;
-  }
   .profile-lists {
     flex-wrap: wrap;
     margin-top: 0;
@@ -6782,9 +6771,6 @@ ul {
   }
 }
 @media (max-width: 767px) {
-  .profile-section {
-    margin-bottom: 60px;
-  }
   .profile-info {
     flex-direction: column;
     align-items: center;
