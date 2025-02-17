@@ -285,15 +285,33 @@
   });
 
 
-  if (document.querySelector('.hero') && !document.querySelector('.category-page')) {
-    const sections = document.querySelectorAll('section');
-    if(sections[sections.length - 1].classList.contains('faq')) {
-      const submitRequest = document.querySelector('.submit-request');
-      if (submitRequest) {
-          submitRequest.classList.add('padding-top');
+  document.addEventListener("DOMContentLoaded", function () {
+    if (document.querySelector(".hero") && !document.querySelector(".category-page")) {
+      const sections = Array.from(document.querySelectorAll("section"));
+
+      if (sections.length > 1) {
+        const secondSection = sections[1];
+        if (!secondSection.matches(".introduction, .faq")) {
+          secondSection.style.paddingTop = "0";
+        }
+      }
+
+      if (sections.length > 1) {
+        const secondLastSection = sections[sections.length - 2];
+        if (!secondLastSection.matches(".introduction, .faq")) {
+          secondLastSection.style.paddingBottom = "0";
+        }
+      }
+
+      const categories = document.querySelectorAll("section.categories");
+      if (categories.length === 2) {
+        const layout2 = document.querySelector("section.categories-layout2");
+        if (layout2) {
+          layout2.style.paddingTop = "0";
+        }
       }
     }
-  }
+  });
 
 
   //DEFAULT THEME CODE

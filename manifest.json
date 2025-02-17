@@ -1,27 +1,13 @@
 {
   "name": "Soto 128",
   "author": "128zen",
-  "version": "1.0.40",
+  "version": "1.0.41",
   "api_version": 3,
   "default_locale": "en-us",
   "settings": [
     {
       "label": "colors_group_label",
       "variables": [
-        {
-          "identifier": "body_primary",
-          "type": "color",
-          "description": "Choose body primary color",
-          "label": "Body Primary Color",
-          "value": "#fff"
-        },
-        {
-          "identifier": "body_secondary",
-          "type": "color",
-          "description": "Choose body secondary color",
-          "label": "Body Secondary Color",
-          "value": "#021C18"
-        },
         {
           "identifier": "body_background_color",
           "type": "color",
@@ -450,13 +436,6 @@
           "value": "Discover everything you need to know to start your journey"
         },
         {
-          "identifier": "introduction_item1_link_text",
-          "type": "text",
-          "description": "Enter text",
-          "label": "Item 1 Link Text",
-          "value": "Learn more"
-        },
-        {
           "identifier": "introduction_item2_heading",
           "type": "text",
           "description": "Enter section heading",
@@ -478,13 +457,6 @@
           "value": "Discover everything you need to know to start your journey"
         },
         {
-          "identifier": "introduction_item2_link_text",
-          "type": "text",
-          "description": "Enter text",
-          "label": "Item 2 Link Text",
-          "value": "Learn more"
-        },
-        {
           "identifier": "introduction_item3_heading",
           "type": "text",
           "description": "Enter section heading",
@@ -504,60 +476,6 @@
           "description": "Enter section subtitle",
           "label": "Item 3 Subtitle",
           "value": "Discover everything you need to know to start your journey"
-        },
-        {
-          "identifier": "introduction_item3_link_text",
-          "type": "text",
-          "description": "Enter text",
-          "label": "Item 3 Link Text",
-          "value": "Learn more"
-        }
-      ]
-    },
-    {
-      "label": "Homepage Promoted Articles Section",
-      "variables": [
-        {
-          "identifier": "show_promoted_section",
-          "type": "checkbox",
-          "description": "Show section",
-          "label": "Toggle Section",
-          "value": true
-        },
-        {
-          "identifier": "promoted_section_heading",
-          "type": "text",
-          "description": "Enter section heading",
-          "label": "Section Heading",
-          "value": "Promoted articles"
-        },
-        {
-          "identifier": "promoted_subtitle",
-          "type": "text",
-          "description": "Enter section subtitle",
-          "label": "Section Subtitle",
-          "value": "Check out our top articles, handpicked to help you get the most out of our platform."
-        },
-        {
-          "identifier": "show_promoted_popular_keywords",
-          "type": "checkbox",
-          "description": "Show popular keywords",
-          "label": "Toggle Popular Keywords",
-          "value": true
-        },
-        {
-          "identifier": "promoted_keywords_description",
-          "type": "text",
-          "description": "Enter popular keywords description",
-          "label": "Popular Keywords Description",
-          "value": "Popular articles"
-        },
-        {
-          "identifier": "promoted_popular_keywords",
-          "type": "text",
-          "description": "Enter popular keywords (separated by commas)",
-          "label": "Popular Keywords",
-          "value": "Community, Data, Open source, Installation, Account, Setting, Sync Profile, Issues, Window, Promo-code"
         }
       ]
     },
@@ -579,13 +497,6 @@
           "value": true
         },
         {
-          "identifier": "category_background_color",
-          "type": "color",
-          "description": "Choose banner background color",
-          "label": "Banner Background Color",
-          "value": "#418CFE"
-        },
-        {
           "identifier": "category2_heading",
           "type": "text",
           "description": "Enter section heading",
@@ -605,6 +516,13 @@
           "description": "Show categories section layout 1 subtitle",
           "label": "Toggle Layout 1 Subtitle",
           "value": true
+        },
+        {
+          "identifier": "shade_color",
+          "type": "color",
+          "description": "Choose the color for shade on the background",
+          "label": "Shade Color",
+          "value": "rgba(2, 218, 66, 0.15)"
         }
       ]
     },
@@ -645,6 +563,13 @@
           "description": "Insert link",
           "label": "Section Button Link",
           "value": "#"
+        },
+        {
+          "identifier": "videos_text_color",
+          "type": "color",
+          "description": "Choose the color for text on items",
+          "label": "Text Color",
+          "value": "#fff"
         },
         {
           "identifier": "videos_img1",
