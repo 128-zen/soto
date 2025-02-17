@@ -1,7 +1,7 @@
 {
   "name": "Soto 128",
   "author": "128zen",
-  "version": "1.0.41",
+  "version": "1.0.42",
   "api_version": 3,
   "default_locale": "en-us",
   "settings": [
@@ -77,6 +77,13 @@
           "description": "Choose the color for borders",
           "label": "Border Color",
           "value": "#A1DDB0"
+        },
+        {
+          "identifier": "shade_color",
+          "type": "color",
+          "description": "Choose the color for shade on the background",
+          "label": "Shade Color",
+          "value": "rgba(2, 218, 66, 0.15)"
         }
       ]
     },
@@ -518,11 +525,25 @@
           "value": true
         },
         {
-          "identifier": "shade_color",
-          "type": "color",
-          "description": "Choose the color for shade on the background",
-          "label": "Shade Color",
-          "value": "rgba(2, 218, 66, 0.15)"
+          "identifier": "show_category1_button",
+          "type": "checkbox",
+          "description": "Show button",
+          "label": "Toggle Button",
+          "value": true
+        },
+        {
+          "identifier": "category1_button",
+          "type": "text",
+          "description": "Enter text",
+          "label": "Section Button Text",
+          "value": "See all categories"
+        },
+        {
+          "identifier": "category1_button_link",
+          "type": "text",
+          "description": "Insert link",
+          "label": "Section Button Link",
+          "value": "#"
         }
       ]
     },
