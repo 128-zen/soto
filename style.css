@@ -2213,6 +2213,7 @@ ul {
 .categories.categories-layout2 .container {
   display: flex;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .categories__header {
