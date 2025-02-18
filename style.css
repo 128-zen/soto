@@ -1554,6 +1554,14 @@ ul {
   gap: 110px;
 } 
 
+@media (max-width: 1279px) {
+  .hero__content-top, .hero__content-bottom {
+    gap: 80px;
+  }
+  .hero__content-top > p, .hero__content-bottom .hero-inner {
+    max-width: 420px;
+  }
+}
 
 @media (max-width: 1023px) {
   .hero .container {
@@ -1664,7 +1672,7 @@ ul {
   .hero__content-bottom {
     flex-direction: column;
     align-items: flex-start;
-    gap: 20px;
+    gap: 40px;
   }
 }
 
@@ -2042,6 +2050,13 @@ ul {
   stroke: $hover_link_color;
 }
 
+@media (min-width: 1440px) {
+  .introduction > svg {
+    width: 100%;
+    height: auto;
+  }
+}
+
 @media (min-width: 768px) {
   .category-page .mobile-button {
     display: none;
@@ -2194,7 +2209,7 @@ ul {
 
 .categories .categories__wrap {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   position: relative;
   z-index: 1;
   border-radius: 4px;
@@ -2231,6 +2246,10 @@ ul {
 .categories__header h2, .categories__head h2 {
   max-width: 410px;
   margin-bottom: 25px;
+}
+
+.categories__head h2 a {
+  font-family: $heading_font;
 }
 
 .categories__header p, .categories__head p {
@@ -2530,7 +2549,7 @@ ul {
 .videos__list{
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: stretch;
   gap: 30px;
   flex-wrap: wrap;
 }
@@ -2559,6 +2578,7 @@ ul {
   position: relative;
   overflow: hidden;
   z-index: 2;
+  height: 100%;
   min-height: 346px;
   border-radius: 4px;
   transition: all .3s ease;
@@ -2619,7 +2639,7 @@ ul {
 .video-modal {
   display: none;
   position: fixed;
-  z-index: 4;
+  z-index: 10;
   align-items: center;
   top: 0;
   left: 0;
@@ -2640,8 +2660,13 @@ ul {
   color: #fff;
 }
 
+@media (max-width: 1279px) {
+  .videos__item-head {
+    padding: 40px 30px;
+  }
+}
 
-@media (max-width: 1023px){
+@media (max-width: 1023px) {
   .videos__item-head {
     order: 1;
     width: 100%;
@@ -2651,8 +2676,13 @@ ul {
     width: calc(50% - 15px);
     order: 2;
   }
+  .videos__item-head h2 {
+    max-width: 520px;
+    margin: 0 auto;
+  }
   .videos__item-head p {
-    margin: 18px 0 40px;
+    max-width: 520px;
+    margin: 18px auto 40px;
   }
 }
 
@@ -2674,14 +2704,17 @@ ul {
   padding-top: 100px;
   background-color: $background_secondary_color;
 }
+
 .faq .container h2 {
   text-align: center;
-  margin-bottom: 20px;
+  margin: 0 auto 20px;
+  max-width: 700px;
 }
 
 .faq .container > p {
   text-align: center;
-  margin-bottom: 60px;
+  margin: 0 auto 60px;
+  max-width: 700px;
 }
 
 .faq__items {
@@ -2778,8 +2811,11 @@ ul {
 }
 
 @media (max-width: 1023px) {
-  
+  .faq .container h2, .faq .container > p {
+    max-width: 500px;
+  }
 }
+
 @media (max-width: 767px) {
   .faq .container > p {
     margin-bottom: 40px;
