@@ -1,7 +1,7 @@
 {
   "name": "Soto 128",
   "author": "128zen",
-  "version": "1.0.43",
+  "version": "1.0.44",
   "api_version": 3,
   "default_locale": "en-us",
   "settings": [
@@ -81,7 +81,7 @@
         {
           "identifier": "shade_color",
           "type": "color",
-          "description": "Choose the color for shade on the background",
+          "description": "Choose a color for the background shade",
           "label": "Shade Color",
           "value": "rgba(2, 218, 66, 0.15)"
         }
@@ -497,13 +497,6 @@
           "value": true
         },
         {
-          "identifier": "show_category2_section",
-          "type": "checkbox",
-          "description": "Show categories section layout 2",
-          "label": "Toggle Layout 2",
-          "value": true
-        },
-        {
           "identifier": "category2_heading",
           "type": "text",
           "description": "Enter section heading",
@@ -528,7 +521,7 @@
           "identifier": "show_category1_button",
           "type": "checkbox",
           "description": "Show button",
-          "label": "Toggle Button",
+          "label": "Toggle Layout 1 Button",
           "value": true
         },
         {
@@ -544,6 +537,13 @@
           "description": "Insert link",
           "label": "Section Button Link",
           "value": "#"
+        },
+        {
+          "identifier": "show_category2_section",
+          "type": "checkbox",
+          "description": "Show categories section layout 2",
+          "label": "Toggle Layout 2",
+          "value": true
         }
       ]
     },
