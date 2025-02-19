@@ -3470,6 +3470,10 @@ ul {
   color: $text_primary;
 }
 
+.nav__category {
+  margin-bottom: 20px;
+}
+
 .nav__category:last-child {
   margin-bottom: 0;
 }
